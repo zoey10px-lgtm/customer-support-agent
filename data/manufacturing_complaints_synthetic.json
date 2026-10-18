@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "dataset_name": "가상 금속 케이스 제조업체 품질 Complaint 데이터",
+    "dataset_name": "세밀론 일렉트로닉스 가상 금속 부품 품질 Complaint 데이터",
     "schema_version": "1.0.0",
     "created_date": "2026-10-12",
     "language": "ko",
@@ -15,7 +15,7 @@
   },
   "company": {
     "id": "MFG-001",
-    "name": "한빛 메탈웍스(가상)",
+    "name": "세밀론 일렉트로닉스 (가상)",
     "industry": "전자제품용 금속 케이스 제조",
     "role": "고객사에 금속 부품을 납품하는 제조업체"
   },

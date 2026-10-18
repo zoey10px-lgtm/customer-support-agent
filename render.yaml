@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: semilon-electronics
+    runtime: python
+    plan: free
+    buildCommand: python -m py_compile server.py
+    startCommand: python server.py
+    healthCheckPath: /healthz
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPEN_BROWSER
+        value: "0"
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        sync: false
+      - key: DEMO_ACCESS_CODE
+        sync: false
+      - key: MAX_ANALYSES_PER_HOUR
+        value: "120"
+      - key: MAX_CONCURRENT_ANALYSES
+        value: "3"

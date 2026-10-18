@@ -69,6 +69,8 @@ class AppTests(unittest.TestCase):
                 urlopen(self.base + path)
             self.assertEqual(caught.exception.code, 404)
         with urlopen(self.base + "/") as response:
+            self.assertIn('/site.js', response.read().decode())
+        with urlopen(self.base + "/support.html") as response:
             self.assertIn('/app.js', response.read().decode())
 
     def test_empty_input_and_cross_origin(self):
